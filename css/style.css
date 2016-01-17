@@ -1,8 +1,20 @@
-body{
+*{
+	-webkit-box-sizing: border-box;
+	padding:0;
+	margin: 0;
+}
 
+body{
+	font:300 17px/1.58 "Raleway", Arial, sans-serif;
+  color: #262626;
 }
 
 /* Typography */
+a {
+	text-decoration: none;
+	color:#000;
+}
+
 a,
 input[type="submit"],
 input[type="button"],
@@ -16,11 +28,35 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	text-decoration: none !important;
+	padding: 0 30px;
+	line-height: 55px;
+	height: 55px;
+	width: 200px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	background-color: #FF6033;
+	vertical-align: middle;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
+	opacity: 0.9;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+button:active,
+.ba-button:active{
+	box-shadow: none;
 
 }
 
@@ -50,8 +86,153 @@ textarea {
 
 }
 
+.ba-image {
+	width: 100%;
+}
 /* Layout */
+.ba-grid + .ba-grid {
+    margin-top: 30px;
+}
+.ba-grid > [class*="ba-width-"] {
+    float: left;
+    padding-left: 30px;
+}
+
+.ba-grid {
+    margin-left: -30px;
+}
+
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+
+.ba-header-baner {
+	position: relative;
+	padding: 50px 0 20px;
+	min-height: 100vh;
+	background:#fff url(../img/fresh.jpg) 50%;
+	background-size: cover;
+}
+
+/* header */
+.ba-header {
+	height: 52px;
+
+}
+.ba-logo {
+	line-height: 30px;
+	font-size: 50px;
+  font-family: "Pacifico";
+  color: rgb(38, 38, 38);
+}
+
+.ba-menu {
+	list-style:none;
+	margin: 0;
+	padding-left: 15px;
+	line-height: 52px;
+
+}
+.ba-menu--item {
+	display: inline-block;
+	margin: 0 10px;
+	font-weight: bold;
+	border-top:2px solid rgba(255, 96, 51, 0);
+	transition:all .3s linear;
+	text-align: right;
+}
+
+
+.ba-menu--item:hover {
+	border-top:2px solid rgba(255, 96, 51, 1);
+}
+.ba-baner {
+
+	margin: 250px 0 200px;
+}
+.ba-fresh__scroll {
+	position: absolute;
+    left: calc(50% - 12px);
+    top: 90vh;
+}
+.ba-title {
+  font-size: 90px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFF;
+}
+.ba-title-fresh {
+	font-size: 60px;
+	font-weight: 800;
+}
+.ba-baner-tittle__black {
+	color: #262626;
+}
+.ba-content {
+	font-weight: 300;
+	margin:30px 0;
+}
+
+
+.ba-about {
+	background-color: #00B2B2;
+	padding: 80px 0;
+	color:#fff;
+}
+
+
+.ba-about-info {
+	padding-left: 90px;
+	padding-top: 20%;
+}
+
+/*ba-services*/
+.ba-services {
+	background-color: #70BFFF;
+	padding: 180px 100px 150px ;
+}
+.ba-services-left {
+	display: inline-block;
+}
+.ba-services__offer {
+	background-color:  #ffffff;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	width: 400px;
+	height: 100px;
+	font-family: Raleway;
+	color:  #262626;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 100px;/* Approximation due to font substitution */
+	text-align: center;
+	margin-bottom:20px ;
+}
+
+.ba-offer__text {
+	width: 300px;
+	border-right: 1px solid #000;
+}
+.ba-icon {
+vertical-align: middle;
+}
+
+.ba-services__tomato {
+	position: relative;
+}
+.ba-serveces__title {
+	position: absolute;
+	top: 130px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: auto;
+	width: auto;
+}
+
+.ba-services__image {
+	position: absolute;
+	top:-70px;
 }
