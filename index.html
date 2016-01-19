@@ -67,11 +67,10 @@
 						</p>
 					</div>
 					<a href="#" class="ba-button">GET FREE NOW</a>
-					<a href="#about" class="ba-text-center">
-						<img src="img/scroll.png" alt="scroll" class="ba-fresh__scroll">
-					</a>
+
 				</div>
 			</div>
+			<a href="#about" class="ba-scroll" id="scroll"></a>
 		</div>
 		<!-- END ba-header-baner -->
 		<main role="main" >
@@ -102,23 +101,26 @@
 				<div class="ba-container">
 
 					<div class="ba-grid">
+
 						<div class="ba-width-1-2">
-							<div class="ba-services__offer cf">
-								<p class="ba-offer__text ba-float-left">Online Shopping</p>
-								<img src="img/icons/icon-cart.svg" class="ba-icon">
-							</div>
-							<div class="ba-services__offer cf">
-								<p class="ba-offer__text ba-float-left">Quality Product</p>
-								<img src="img/icons/icon-quality.svg" class="ba-icon">
-							</div>
-							<div class="ba-services__offer cf">
-								<p class="ba-offer__text ba-float-left">Domestic Internatioanal </p>
-								<img src="img/icons/icon-globe.svg" class="ba-icon">
-							</div>
-							<div class="ba-services__offer cf">
-								<p class="ba-offer__text ba-float-left">Well Organized</p>
-								<img src="img/icons/icon-carat.svg" class="ba-icon">
-							</div>
+							<ul class="ba-offer">
+								<li class="ba-offer__item">
+									<p class="ba-offer__text">Online Shopping</p>
+									<span class="ba-icon ba-icon--cart"></span>
+								</li>
+								<li class="ba-offer__item">
+									<p class="ba-offer__text">Quality Product</p>
+									<span class="ba-icon ba-icon--quality"></span>
+								</li>
+								<li class="ba-offer__item">
+									<p class="ba-offer__text">Domestic Internatioanal Delivery</p>
+									<span class="ba-icon ba-icon--globe"></span>
+								</li>
+								<li class="ba-offer__item">
+									<p class="ba-offer__text">Well Organized</p>
+									<span class="ba-icon ba-icon--carat"></span>
+								</li>
+							</ul>
 						</div>
 						<div class="ba-width-1-2 ba-services__tomato">
 							<img src="img/tomato.png" class="ba-services__image">
@@ -127,16 +129,186 @@
 							</h1>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section class="ba-gallery" id="gallery">
+				<div class="ba-container">
+					<h1 class="ba-title ba-title__black ba-text-center">Gallery</h1>
+					<p class="ba-content ba-text-center">
+						Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>
+						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>
+						ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
 
+					<div class="ba-grid">
+						<div class="ba-width-2-3">
+							<img src="img/gallery/peach.jpg" alt="peach" class="ba-gallery--img">
+						</div>
+						<div class="ba-width-1-3">
+							<div class="ba-grid">
+								<div class="ba-width-1-1">
+									<img src="img/gallery/blueberries.jpg" alt="blueberries" class="ba-gallery--img">
+								</div>
+							</div>
+							<div class="ba-grid">
+								<div class="ba-width-1-1">
+									<img src="img/gallery/blackberry.jpg" alt="blackberry" class="ba-gallery--img">
+								</div>
+							</div>
+						</div>
+					</div>
 
-
+					<div class="ba-grid">
+						<div class="ba-width-1-2">
+							<img src="img/gallery/milk.jpg" alt="milk" class="ba-gallery--img">
+						</div>
+						<div class="ba-width-1-2">
+							<img src="img/gallery/persimmon.jpg" alt="persimmon" class="ba-gallery--img">
+						</div>
+					</div>
+					<div class="ba-gallery--button ba-text-center">
+						<a href="#" class="ba-button ba-button-gallery">VIEW MORE</a>
+					</div>
 				</div>
 			</section>
 
+			<section class="ba-subscribe" id="#subscribe">
+				<div class="ba-container">
+					<h2 class="ba-title ba-subscribe-tittle">
+						Subscribe To Us
+					</h2>
+					<p class="ba-content">
+						Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br>
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</p>
+					<form action="#" method="post">
+						<input type="email" name="email" required placeholder="Your email address...">
+						<button class="ba-button ba-button--subscribe" type="submit">SUBSCRIBE</button>
+					</form>
+				</div>
+			</section>
+
+			<section class="ba-blog" id="blog">
+				<div class="ba-container">
+					<h1 class="ba-title ba-text-center">
+						Blog
+					</h1>
+					<p class="ba-content ba-text-center ba-title-light">
+						Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>
+						ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure <br>
+						dolor in reprehenderit in voluptate velit.
+					</p>
+
+					<div class="ba-grid">
+						<div class="ba-width-1-3">
+							<div class="ba-blog--smoothies">
+								<span class="ba-blog--date">20<br>
+									<span>NOV</span>
+								</span>
+								<div class="ba-blog--text">
+									<h5 class="ba-title ba-title__small">
+										Green Smoothies: Too Much of a Good Thing?
+									</h5>
+									<p class="ba-content ba-content__small">By Auskteez - 2 hours ago</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="ba-width-1-3">
+							<div class="ba-blog--soup">
+								<span class="ba-blog--date">14<br>
+									<span>NOV</span>
+								</span>
+								<div class="ba-blog--text">
+									<h5 class="ba-title ba-title__small">
+										Growing Food and a “Thirst” for Innovation
+									</h5>
+									<p class="ba-content ba-content__small">By Auskteez - 3 hours</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="ba-width-1-3">
+							<div class="ba-blog--raspberries">
+								<span class="ba-blog--date">10<br>
+									<span>NOV</span>
+								</span>
+								<div class="ba-blog--text">
+									<h5 class="ba-title ba-title__small">
+										Pesticides & Food: What You Need to Know
+									</h5>
+									<p class="ba-content ba-content__small">By Auskteez - 6 hours ago</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ba-blog-button">
+						<a href="#" class="ba-button ba-button-gallery">VIEW MORE</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="ba-contact" id="contact">
+				<div class="ba-container">
+					<h1 class="ba-title ba-title__black ba-text-center">
+						Contact
+					</h1>
+					<p class="ba-content ba-text-center">
+						For new projects, ideas, business or anything<br>
+						you'd like to discuss, contact with me!
+					</p>
+
+					<div class="ba-grid">
+						<div class="ba-width-1-2">
+							<form action="#" method="post">
+								<input class="ba-contact--form ba-text__white" type="text" name="name" required placeholder="Your name...">
+								<input class="ba-contact--form ba-text__white" type="email" name="email" required placeholder="Your email...">
+								<input class="ba-contact--form ba-text__white" type="tel" name="email" required placeholder="Your phone number...">
+								<textarea  class="ba-contact--form ba-textarea ba-text__white" placeholder="Your message..."></textarea>
+								<button class="ba-button ba-button--subscribe" type="submit">SEND</button>
+							</form>
+						</div>
+						<div class="ba-width-1-2">
+							<h3 class="ba-contact-info--title">
+								ADDRESS
+							</h3>
+							<p class="ba-contact-info--text ba-content">
+								123 City name, Street, City, Country
+							</p>
+							<h3 class="ba-contact-info--title">
+								EMAIL
+							</h3>
+							<p class="ba-contact-info--text ba-content">
+								<a href="cahee@domain.com">cahee@domain.com</a>
+							</p>
+							<h3 class="ba-contact-info--title">
+								PHONE
+							</h3>
+							<p class="ba-contact-info--text ba-content">
+								+012 345 6789
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		</main>
-		<footer class="ba-footer">
+		<footer class="ba-footer" >
+			<div class="ba-container">
+			<div class="ba-grid">
+				<div class="ba-width-1-3">
+					<p class="ba-footer-content">© 2015 Company. All right reserved.</p>
+				</div>
+				<div class="ba-width-1-3 ba-footer-logo">
+					<img src="img/logo-small.png" class="ba-footer--logo">
+				</div>
+				<div class="ba-width-1-3">
+					<p class="ba-footer-content ba-author">Made with <span>love</span> by <a href="#">Auskteez</a></p>
+				</div>
+			</div>
 
+
+			</div>
 		</footer>
 		<script src="js/main.js"></script>
 	</body>
