@@ -442,6 +442,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	text-decoration: none;
 }
 
+.ba-contact--form:focus {
+	background-color: #00c4c4;
+    border-left: 5px solid #355b82;
+}
+
 .ba-textarea {
 	height: 250px;
 }
